@@ -188,13 +188,14 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     .footer__adress {
         text-align: left;
-    }
+    
     &-email {
         padding-top: 9px;
     }
     &-telephone {
         padding-top: 9px;
     }
+}
 
     .footer__info-adress {
         margin-right: 70px;
