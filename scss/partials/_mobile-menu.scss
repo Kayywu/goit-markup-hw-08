@@ -1,0 +1,129 @@
+/*Mobile */
+
+.mobile-header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+}
+
+.menu-toggle {
+    display: flex;
+    min-height: 40px;
+    min-width: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: var(--black-color);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--accent-color);
+        background-color: transparent;
+    }
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: var(--white-color);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle:hover,
+.menu-container .menu-toggle:focus {
+    color: var(--accent-color);
+}
+
+.mobile-menu {
+    list-style: none;
+
+    &__link {
+        display: block;
+        color: var(--black-color);
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+        padding-top: 32px;
+    
+        &--active {
+            color: var(--accent-color);
+        }
+
+        &:hover,
+        &focus {
+            color: var(--accent-color);
+        }
+    }
+    &-contacts {
+        margin-top: 32px;
+     
+        &__link {
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: var(--descriptions-color);
+        
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+        }
+
+        &__link[href="tel:+48111111111"] {
+            color: var(--accent-color);
+            line-height: 1.176;
+            font-size: 34px;
+        }
+
+        &__link[href="mailto:info@devstudio.com"] {
+            display: block;
+            padding-top: 32px;
+            font-size: 24px;
+            line-height: 1.167;
+        }
+    }
+
+    &-socials {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 8px;
+    
+        &__link {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration: none;
+            line-height: 1.222;
+            letter-spacing: 0.02em;
+            color: var(--accent-color);
+        
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-header {
+        display: none;
+    }
+}

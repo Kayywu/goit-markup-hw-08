@@ -1,3 +1,4 @@
+/*MOBILE */
 
 .section-list {
     list-style: none;
@@ -7,7 +8,7 @@
 
     &__image {
     display: flex;
-    width: 270px;
+    max-width: 450px;
     height: 120px;
     justify-content: center;
     align-items: center;
@@ -31,4 +32,31 @@
     line-height: 1.7;
     letter-spacing: 0.3px;
 }
+}
+
+/* TABLET */
+
+@media screen and (min-width:768px) {
+    .section-list {
+        width: calc((100vw - 15px - 30px - 15px) / 2);
+        max-width: 728px;
+    &__title {
+        text-align: left;
+    }
+    &__text {
+        width: calc((100vw - 15px - 30px - 15px) / 2);
+        max-width: 728px;
+    }
+}
+}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1200px) {
+    .section-list__image {
+        width: 270px;
+    }
+    .section-list__image {
+        width: 270px;
+    }
 }

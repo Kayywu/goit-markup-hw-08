@@ -1,5 +1,16 @@
+/* MOBILE */
+/* TABLET */
 
-.section-jobs {
+@media screen and (max-width: 1119px) {
+   .section-jobs {
+      display: none;
+   }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+  .section-jobs {
 
    &__title {
     font-size: 36px;
@@ -28,9 +39,8 @@
     padding-top: 27px;
     padding-bottom: 27px;
 }
-}
 
-   .section-jobs__item {
+   &__item {
     position: relative;
 
    &--bcground {
@@ -42,5 +52,7 @@
     z-index: 1;
 }
    }
+}
+}
 
 

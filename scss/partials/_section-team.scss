@@ -1,3 +1,11 @@
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    .section-team__img {
+        width: (100vw - 30px);
+        max-width: 450px;
+    }
+}
+
 
 .section-team {
     background-color: var(--background-light-color);
@@ -53,3 +61,24 @@
 }
 }
 
+
+/* TABLET */
+
+@media screen and (min-width:768px) {
+    .section-team__img {
+        width: calc(100vw - 15px - 30px - 15px) / 2;
+        max-width: 354px;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+    .section-team__img {
+        width: 270px;
+        height: 260px;
+    }
+    .social-media {
+        padding-bottom: 30px;
+    }
+}

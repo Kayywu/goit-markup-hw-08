@@ -422,6 +422,7 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/);
   }
 }
+/*MOBILE */
 .section-list {
   list-style: none;
   display: flex;
@@ -429,7 +430,7 @@
 }
 .section-list__image {
   display: flex;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   justify-content: center;
   align-items: center;
@@ -452,44 +453,75 @@
   letter-spacing: 0.3px;
 }
 
-.section-jobs__title {
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 42.2px;
-  padding-bottom: 50px;
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .section-list {
+    width: calc((100vw - 15px - 30px - 15px) / 2);
+    max-width: 728px;
+  }
+  .section-list__title {
+    text-align: left;
+  }
+  .section-list__text {
+    width: calc((100vw - 15px - 30px - 15px) / 2);
+    max-width: 728px;
+  }
 }
-.section-jobs__list {
-  list-style-type: none;
-  display: flex;
-  gap: 30px;
+/*DESKTOP*/
+@media screen and (min-width: 1200px) {
+  .section-list__image {
+    width: 270px;
+  }
+  .section-list__image {
+    width: 270px;
+  }
 }
-.section-jobs__type {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  padding-top: 27px;
-  padding-bottom: 27px;
+/* MOBILE */
+/* TABLET */
+@media screen and (max-width: 1119px) {
+  .section-jobs {
+    display: none;
+  }
 }
-
-.section-jobs__item {
-  position: relative;
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  .section-jobs__title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 42.2px;
+    padding-bottom: 50px;
+  }
+  .section-jobs__list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  .section-jobs__type {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  .section-jobs__item {
+    position: relative;
+  }
+  .section-jobs__item--bcground {
+    position: absolute;
+    width: 100%;
+    top: 224px;
+    background-color: var(--background-dark-color);
+    border: 1px black solid;
+    z-index: 1;
+  }
 }
-.section-jobs__item--bcground {
-  position: absolute;
-  width: 100%;
-  top: 224px;
-  background-color: var(--background-dark-color);
-  border: 1px black solid;
-  z-index: 1;
-}
-
 .section-team {
   background-color: var(--background-light-color);
 }
