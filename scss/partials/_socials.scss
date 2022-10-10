@@ -1,0 +1,33 @@
+/*SOCIAL MEDIA BLOK */
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 30px;
+
+    &__item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--client-list-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var();
+    }
+
+   &__item:hover,
+   &__item:active {
+    background-color: var(--accent-color);
+    cursor: pointer;
+    fill: var(--white-color);
+}
+
+    &__item--background {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    }

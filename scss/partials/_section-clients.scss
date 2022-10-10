@@ -1,0 +1,46 @@
+
+.section-clients {
+
+    &__caption {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+    &__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    fill: var(--client-list-color);
+}
+
+    &__logo {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--client-list-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 17.71px;
+    padding-bottom: 14.25px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+    &__logo:hover,
+    &__logo:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+    cursor: pointer;
+}
+}
+

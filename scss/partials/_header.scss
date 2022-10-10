@@ -1,0 +1,125 @@
+/* HEADER STYLES */
+
+/* MOBILE */
+
+@media screen and (max-width: 767px){
+    .site-bar {
+        display: none;
+    }
+}
+
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    .site-bar {
+        display: flex;
+        align-items: center;
+    }
+    .header-area {
+        background-color: var(--white-color);
+        border-bottom: 1px solid #ececec;
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px){
+
+}
+
+
+.header-area {
+    background-color: var(--white-color);
+    border-bottom: 1px solid #ececec;
+}
+
+.site-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-navigation {
+
+    display: flex;
+    align-items: center;
+
+    &__list {
+    display: flex;
+    list-style: none;
+}
+
+    &__item {
+    position: relative;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    vertical-align: top;
+    letter-spacing: 0.5px;
+    margin-right: 46px;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__item:hover,
+    &__item:focus {
+    color: var(--accent-color);
+}
+    &__item--agency::after {
+    content: "";
+    position: absolute;
+    background: var(--accent-color);
+    border-radius: 2px;
+    width: 53px;
+    height: 4px;
+    left: 0;
+    top: 50px;
+}   
+
+    &__item-margin {
+    margin-right: 50px;
+}   
+}
+
+    .main-contact { 
+    
+    display: flex;
+    list-style: none;
+
+    &__data {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--descriptions-color);
+    text-decoration: none;
+    margin-right: 30px;
+   
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+    }
+}
+
+    &__telephone-margin {
+    margin-right: 10px;
+    }
+
+    &__icon {
+    height: 14px;
+    width: 18px;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }
+
+
