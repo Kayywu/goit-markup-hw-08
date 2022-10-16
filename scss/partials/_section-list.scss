@@ -53,10 +53,16 @@
 /*DESKTOP*/
 
 @media screen and (min-width: 1200px) {
+   
     .section-list__image {
         width: 270px;
     }
-    .section-list__image {
-        width: 270px;
+    .section-list__text {
+        max-width: 100%;
+    }
+    .section-list {
+        width: 1170px;
+        width: 100%;
+        max-width: 100%;
     }
 }

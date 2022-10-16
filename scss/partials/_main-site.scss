@@ -51,17 +51,20 @@
 
 @media screen and (min-width:768px) {
     .main-site {
+    background-repeat: no-repeat;
     background: linear-gradient(
         to bottom,
         rgb(0,0,0, 40%),
         rgb(0,0,0, 40%)),
     url(../Images/background-image-tablet.jpg);
     
+    
     @media (min-device-pixel-ratio: 2 ),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .main-site {
+            background-repeat: no-repeat;
             background: url(../Images/background-image-tablet@2x.jpg);
         }
     }
@@ -76,6 +79,19 @@
             to bottom,
             rgb(0,0,0, 40%),
             rgb(0,0,0, 40%)),
-        url(../Images/);
+        url(../Images/background-image-desktop.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .main-site {
+            background:linear-gradient(
+            to bottom,
+            rgb(0,0,0, 40%),
+            rgb(0,0,0, 40%)),
+        url(../Images/background-image-desktop@2x.jpg)
+            }
+        }
     }
 }

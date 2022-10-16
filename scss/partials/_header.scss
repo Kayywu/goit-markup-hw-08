@@ -12,21 +12,26 @@
 /* TABLET */
 
 @media screen and (min-width: 768px) {
+    .main-contact {
+        display: block;
+    }
     .site-bar {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     .header-area {
         background-color: var(--white-color);
         border-bottom: 1px solid #ececec;
     }
+
 }
 
 
 /* DESKTOP */
 
 @media screen and (min-width: 1200px){
-
+    
 }
 
 

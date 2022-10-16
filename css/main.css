@@ -278,9 +278,13 @@
 }
 /* TABLET */
 @media screen and (min-width: 768px) {
+  .main-contact {
+    display: block;
+  }
   .site-bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .header-area {
     background-color: var(--white-color);
@@ -408,18 +412,25 @@
 /* TABLET */
 @media screen and (min-width: 768px) {
   .main-site {
+    background-repeat: no-repeat;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-image-tablet.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main-site .main-site {
+    background-repeat: no-repeat;
     background: url(../Images/background-image-tablet@2x.jpg);
   }
 }
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
   .main-site {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-image-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-site .main-site {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-image-desktop@2x.jpg);
   }
 }
 /*MOBILE */
@@ -472,8 +483,13 @@
   .section-list__image {
     width: 270px;
   }
-  .section-list__image {
-    width: 270px;
+  .section-list__text {
+    max-width: 100%;
+  }
+  .section-list {
+    width: 1170px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 /* MOBILE */
@@ -1076,7 +1092,12 @@
 }
 
 @media (min-width: 768px) {
-  .mobile-header {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .menu-container {
     display: none;
   }
 }
