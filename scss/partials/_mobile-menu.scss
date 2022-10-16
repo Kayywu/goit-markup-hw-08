@@ -65,16 +65,21 @@
         letter-spacing: 0.02em;
         padding-top: 32px;
     
+  
         &--active {
             color: var(--accent-color);
         }
+        
 
         &:hover,
         &focus {
             color: var(--accent-color);
         }
-    }
-    &-contacts {
+}
+}
+
+
+    .mobile-menu-contacts {
         margin-top: 32px;
      
         &__link {
@@ -87,7 +92,7 @@
             &:focus {
                 color: var(--accent-color);
             }
-        }
+        
 
         &__link[href="tel:+48111111111"] {
             color: var(--accent-color);
@@ -102,8 +107,9 @@
             line-height: 1.167;
         }
     }
+}
 
-    &-socials {
+    .mobile-menu-socials {
         display: flex;
         flex-wrap: wrap;
         margin-top: 8px;
@@ -120,7 +126,7 @@
         
         }
     }
-}
+
 
 @media (min-width: 768px) {
     .menu-toggle {

@@ -1,20 +1,16 @@
 /* MOBILE */
 
 .main-site { 
+    background: url(../Images/background-image-mobile.png);
     background-repeat: no-repeat;
-    background: linear-gradient(
-        to bottom,
-        rgb(0,0,0, 40%),
-        rgb(0,0,0, 40%)),
-    url(../Images/background-image-mobile.png);
-    padding: 200px 0;
+    padding: 118px 0;
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio:2),
     (min-resolution: 192dpi),
     (min-resolution: 2ddpx) {
         .main-site {
-            background-repeat: no-repeat;
             background: url(../Images/background-image-mobile.png);
+            background-repeat: no-repeat;
         }
     }
     
@@ -22,7 +18,7 @@
 
     &__caption {
     color: var(--white-color);
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
     line-height: 1.4;
     text-align: center;
@@ -53,22 +49,26 @@
 
 @media screen and (min-width:768px) {
     .main-site {
-    background-repeat: no-repeat;
-    background: linear-gradient(
-        to bottom,
-        rgb(0,0,0, 40%),
-        rgb(0,0,0, 40%)),
+    background:
     url(../Images/background-image-tablet.jpg);
-    
+     background-repeat: no-repeat;
+
+    &__caption {
+        font-size: 44px;
+    }
     
     @media (min-device-pixel-ratio: 2 ),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .main-site {
-            background-repeat: no-repeat;
-            background: url(../Images/background-image-tablet@2x.jpg);
+        background: url(../Images/background-image-tablet@2x.jpg);
+        background-repeat: no-repeat;
+        
+        &__caption {
+            font-size: 44px;
         }
+    }
     }
 }
 }
@@ -77,25 +77,24 @@
 
 @media screen and (min-width: 1200px) {
     .main-site {
+        background:url(../Images/background-image-desktop.jpg);
         background-repeat: no-repeat;
-        background:linear-gradient(
-            to bottom,
-            rgb(0,0,0, 40%),
-            rgb(0,0,0, 40%)),
-        url(../Images/background-image-desktop.jpg);
-
+        &__caption {
+            font-size: 44px;
+        }
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .main-site {
+            
+            background: url(../Images/background-image-desktop@2x.jpg);
             background-repeat: no-repeat;
-            background:linear-gradient(
-            to bottom,
-            rgb(0,0,0, 40%),
-            rgb(0,0,0, 40%)),
-        url(../Images/background-image-desktop@2x.jpg)
+            
+            &__caption {
+                font-size: 44px;
             }
+        }
         }
     }
 }
