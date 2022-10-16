@@ -3,7 +3,10 @@
 /* MOBILE */
 
 @media screen and (max-width: 767px){
-    .site-bar {
+    .main-navigation__list {
+        display: none;
+    }
+    .main-contact {
         display: none;
     }
 }
@@ -128,3 +131,13 @@
     }
 
 
+/* MOBILE */
+
+@media screen and (max-width: 767px){
+    .main-navigation__list {
+        display: none;
+    }
+    .main-contact {
+        display: none;
+    }
+}

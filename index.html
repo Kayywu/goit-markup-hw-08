@@ -27,26 +27,6 @@
           <a class="logo logo--first" href="index.html"
             >Web<span class="logo logo--second-header">Studio</span></a
           >
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-
           <ul class="main-navigation__list">
             <li>
               <a
@@ -69,6 +49,25 @@
             </li>
           </ul>
         </nav>
+        <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         <ul class="main-contact">
           <li>
             <a class="main-contact__data" href="mailto:info@devstudio.com">
@@ -107,7 +106,7 @@
 
       <section class="section container">
         <ul class="section-list">
-          <li>
+          <li class="section-list__item">
             <div class="section-list__image">
               <svg width="70" height="70">
                 <use href="./Images/symbol-defs.svg#icon-antenna-1"></use>
@@ -120,7 +119,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="section-list__item">
             <div class="section-list__image">
               <svg width="70" height="70">
                 <use href="./Images/symbol-defs.svg#icon-clock-1"></use>
@@ -133,7 +132,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="section-list__item">
             <div class="section-list__image">
               <svg width="70" height="70">
                 <use href="./Images/symbol-defs.svg#icon-diagram-1"></use>
@@ -146,7 +145,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="section-list__item">
             <div class="section-list__image">
               <svg width="70" height="70">
                 <use href="./Images/symbol-defs.svg#icon-astronaut-1"></use>
@@ -204,7 +203,7 @@
         <div class="container">
           <h2 class="section-team__caption">Nasz zespół</h2>
           <ul class="section-team__list">
-            <li>
+            <li class="section-team__item">
               <figure class="section-team__worker">
                 <picture>
                   <source srcset="Images/product-designer.jpg" media="(min-width: 1200px)"/>
@@ -258,7 +257,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="section-team__item">
               <figure class="section-team__worker">
                 <picture>
                   <source srcset="Images/frontend-developer.jpg" media="(min-width: 1200px)" />
@@ -311,7 +310,7 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="section-team__item">
               <figure class="section-team__worker">
                 <picture>
                   <source srcset="images/marketing-deskt.jpg" media="(min-width: 1200px)" />
@@ -365,7 +364,7 @@
               </figure>
             </li>
 
-            <li>
+            <li class="section-team__item">
               <figure class="section-team__worker">
                 <picture>
                   <source srcset="Images/UIdesigner.jpg" media="(min-width: 1200px)" />

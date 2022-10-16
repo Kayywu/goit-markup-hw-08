@@ -182,7 +182,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /*DESKTOP */
 
 @media screen and (min-width:1200px) {
-    .footer-info {
+    .footer__info {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
@@ -198,7 +198,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
     .footer__info-adress {
-        margin-right: 70px;
         width: auto;
     }
     .social-media {
@@ -210,5 +209,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     .footer-newsletter__input {
         width: 358px;
         margin-right: 12px;
+        margin-left: 0;
+    }
+    .footer-newsletter__title {
+        margin-left: 0;
     }
 }

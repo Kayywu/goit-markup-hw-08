@@ -26,6 +26,7 @@
     display: flex;
     gap: 30px;
     padding-bottom: 94px;
+    flex-wrap: wrap;
 }
 
     &__worker {
@@ -66,8 +67,10 @@
 
 @media screen and (min-width:768px) {
     .section-team__img {
-        width: calc(100vw - 15px - 30px - 15px) / 2;
-        max-width: 354px;
+        width: 100%;
+    }
+    .section-team__item {
+        width: calc((100% - 60px) / 2);
     }
 }
 

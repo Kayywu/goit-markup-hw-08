@@ -1,18 +1,20 @@
 /* MOBILE */
 
 .main-site { 
+    background-repeat: no-repeat;
     background: linear-gradient(
         to bottom,
         rgb(0,0,0, 40%),
         rgb(0,0,0, 40%)),
-    url(../Images/background-image-mobile.jpg);
+    url(../Images/background-image-mobile.png);
     padding: 200px 0;
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio:2),
     (min-resolution: 192dpi),
     (min-resolution: 2ddpx) {
         .main-site {
-            background: url(../Images/background-image-mobile@2x);
+            background-repeat: no-repeat;
+            background: url(../Images/background-image-mobile.png);
         }
     }
     
@@ -75,6 +77,7 @@
 
 @media screen and (min-width: 1200px) {
     .main-site {
+        background-repeat: no-repeat;
         background:linear-gradient(
             to bottom,
             rgb(0,0,0, 40%),
@@ -86,6 +89,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .main-site {
+            background-repeat: no-repeat;
             background:linear-gradient(
             to bottom,
             rgb(0,0,0, 40%),
