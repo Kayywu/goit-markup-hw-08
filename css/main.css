@@ -823,7 +823,7 @@
   display: block;
   margin-left: 78px;
   margin-bottom: 20px;
-  justify-content: center;
+  align-items: center;
 }
 .footer-newsletter__button-svg-position {
   margin-left: 24px;
