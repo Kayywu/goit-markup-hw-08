@@ -787,6 +787,11 @@
   flex-flow: row wrap;
   align-items: center;
 }
+.footer-newsletter__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer-newsletter__input {
   font-weight: 400;
   font-size: 16px;
@@ -821,9 +826,7 @@
   letter-spacing: 0.03em;
   color: var(--white-color);
   display: block;
-  margin-left: 78px;
   margin-bottom: 20px;
-  align-items: center;
 }
 .footer-newsletter__button-svg-position {
   margin-left: 24px;
