@@ -716,6 +716,12 @@
 .footer__info {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+.footer__info-adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer .footer-socials {
   margin-right: 137px;
@@ -817,6 +823,7 @@
   display: block;
   margin-left: 78px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 .footer-newsletter__button-svg-position {
   margin-left: 24px;
