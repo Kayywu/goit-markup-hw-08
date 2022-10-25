@@ -18,6 +18,8 @@
     gap: 30px;
     fill: var(--client-list-color);
     flex-wrap: wrap;
+    padding: 0 15px;
+    justify-content: space-between;
 }
 
     &__logo {
