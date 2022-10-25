@@ -56,10 +56,11 @@
     }
 }
 
-/* DESKTOP *
+/* DESKTOP */
 
 @media screen and (min-width: 1200px) {
     .section-clients__logo {
-        width: ;
+        width: 100%;
+        max-width: 170px;
     }
-} */
+} 

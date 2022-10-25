@@ -707,13 +707,13 @@
     max-width: 100%;
   }
 }
-/* DESKTOP *
-
+/* DESKTOP */
 @media screen and (min-width: 1200px) {
-    .section-clients__logo {
-        width: ;
-    }
-} */
+  .section-clients__logo {
+    width: 100%;
+    max-width: 170px;
+  }
+}
 /* FOOTER */
 .footer {
   background-color: var(--background-dark-color);
