@@ -457,6 +457,7 @@
   .main-site {
     background: url(../Images/background-image-desktop.jpg);
     background-repeat: no-repeat;
+    padding: 200px 200px;
   }
   .main-site__caption {
     font-size: 44px;
@@ -520,7 +521,8 @@
 /*DESKTOP*/
 @media screen and (min-width: 1200px) {
   .section-list__image {
-    width: 270px;
+    width: 100%;
+    max-width: 100%;
   }
   .section-list__text {
     width: 100%;
@@ -529,6 +531,10 @@
   .section-list {
     width: 100%;
     max-width: 100%;
+  }
+  .section-list__item {
+    width: 100%;
+    max-width: 270px;
   }
 }
 /* MOBILE */

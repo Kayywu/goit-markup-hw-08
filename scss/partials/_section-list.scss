@@ -62,7 +62,8 @@
 @media screen and (min-width: 1200px) {
    
     .section-list__image {
-        width: 270px;
+        width: 100%;
+        max-width: 100%;
     }
     .section-list__text {
         width: 100%;
@@ -71,5 +72,9 @@
     .section-list {
         width: 100%;
         max-width: 100%;
+    }
+    .section-list__item {
+        width: 100%;
+        max-width: 270px;
     }
 }
