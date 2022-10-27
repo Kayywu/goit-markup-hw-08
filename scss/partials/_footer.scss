@@ -4,12 +4,14 @@
 
 .footer {
     background-color: var(--background-dark-color);
-    padding: 60px 0;
+    justify-items: center;
 
     &__info {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+
     }
 
     &__info-adress {
@@ -19,8 +21,9 @@
     }
 
     .footer-socials {
-    margin-right: 137px;
-    margin-left: 137px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
     &__socials-title {
@@ -90,12 +93,14 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .footer-newsletter {
-
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
     justify-content: space-between;
 
     &__form {
     display: flex;
-    flex-flow: nowrap;
+    flex-flow: wrap;
     justify-content: flex-end;
     align-items: flex-end;
     }

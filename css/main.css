@@ -723,12 +723,13 @@
 /* FOOTER */
 .footer {
   background-color: var(--background-dark-color);
-  padding: 60px 0;
+  justify-items: center;
 }
 .footer__info {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 .footer__info-adress {
   display: flex;
@@ -736,8 +737,9 @@
   align-items: flex-start;
 }
 .footer .footer-socials {
-  margin-right: 137px;
-  margin-left: 137px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__socials-title {
   font-family: Roboto;
@@ -792,11 +794,14 @@
 
 /* NEWSLETTER FOOTER */
 .footer-newsletter {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 .footer-newsletter__form {
   display: flex;
-  flex-flow: nowrap;
+  flex-flow: wrap;
   justify-content: flex-end;
   align-items: flex-end;
 }
