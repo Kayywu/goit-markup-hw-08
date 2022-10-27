@@ -5,22 +5,23 @@
 .footer {
     background-color: var(--background-dark-color);
     justify-items: center;
-
-    &__info {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 
+    &__info {
+    align-items: center;
     }
 
     &__info-adress {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 60px;
     }
 
-    .footer-socials {
+    .footer__socials {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,9 +36,13 @@
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 20px;
+    margin-top: 15px;
     }
 
     &__adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--white-color);
     font-size: 14px;
     font-weight: 400;
@@ -47,7 +52,6 @@
     vertical-align: top;
     letter-spacing: 0.25px;
     padding-top: 20px;
-    margin-right: 114px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -94,21 +98,21 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .footer-newsletter {
     display: flex;
-    flex-flow: wrap;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 
     &__form {
     display: flex;
-    flex-flow: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 
     &__label {
     display: flex;
     flex-direction: column; 
-    align-items: flex-start;
+    align-items: center;
     }
 
    &__input {
@@ -175,6 +179,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     position: relative;
     padding: 10px 60px 10px 40px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 
    &:active {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
