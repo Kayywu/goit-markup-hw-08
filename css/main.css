@@ -540,6 +540,7 @@
   .section-list__item {
     width: 100%;
     max-width: 270px;
+    padding: 0px;
   }
 }
 /* MOBILE */
@@ -583,7 +584,8 @@
     position: absolute;
     width: 100%;
     top: 224px;
-    background-color: var(--background-dark-color);
+    background-color: #2F303A;
+    opacity: 0.8;
     border: 1px black solid;
     z-index: 1;
   }
