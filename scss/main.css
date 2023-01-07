@@ -372,11 +372,11 @@
   .main-navigation__item-margin {
     margin-right: 50px;
   }
-  .main-navigation .main-contact {
+  .main-contact {
     display: flex;
     list-style: none;
   }
-  .main-navigation .main-contact__data {
+  .main-contact__data {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -387,14 +387,14 @@
     text-decoration: none;
     margin-right: 30px;
   }
-  .main-navigation .main-contact__data:hover, .main-navigation .main-contact__data:focus {
+  .main-contact__data:hover, .main-contact__data:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
   }
-  .main-navigation .main-contact__telephone-margin {
+  .main-contact__telephone-margin {
     margin-right: 10px;
   }
-  .main-navigation .main-contact__icon {
+  .main-contact__icon {
     height: 14px;
     width: 18px;
     margin-right: 10px;
