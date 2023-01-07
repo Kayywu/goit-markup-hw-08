@@ -35,9 +35,6 @@
 
 @media screen and (min-width: 1200px){
     
-}
-
-
 .header-area {
     background-color: var(--white-color);
     border-bottom: 1px solid #ececec;
@@ -89,8 +86,7 @@
 
     &__item-margin {
     margin-right: 50px;
-}   
-}
+}  
 
     .main-contact { 
     
@@ -128,5 +124,4 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    }
-
+    }}}
