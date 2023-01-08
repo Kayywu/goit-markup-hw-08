@@ -34,6 +34,11 @@
 /* DESKTOP */
 
 @media screen and (min-width: 1200px){
+
+.main-contact { 
+    display: flex;
+    list-style: none;
+    }
     
 .header-area {
     background-color: var(--white-color);
@@ -44,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+}}
 
 .main-navigation {
     display: flex;
@@ -87,11 +92,7 @@
     margin-right: 50px;
 }}
 
-    .main-contact { 
-    display: flex;
-    list-style: none;
-
-    &__data {
+    .main-contact__data {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -106,7 +107,7 @@
     &:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
-    }}
+    }
 
     &__telephone-margin {
     margin-right: 10px;
@@ -120,6 +121,4 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    }}
-
-    /* test ..... */
+}
