@@ -188,6 +188,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 10px 60px 10px 40px;
     margin-top: 20px;
     margin-bottom: 60px;
+    margin-left: 291px;
 
    &:active {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
@@ -207,10 +208,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         width: calc((100vw - 30px) / 2);
         max-width: 603px;
     }
-    .footer-newsletter__form {
+    .footer-newsletter {
+        &__form {
         display: block;
+        margin-top: 60px;
     }
-}
+       &__input {
+       width: 450px;
+       }
+}}
 
 /*DESKTOP */
 
