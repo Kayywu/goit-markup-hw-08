@@ -188,7 +188,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 10px 60px 10px 40px;
     margin-top: 20px;
     margin-bottom: 60px;
-    margin-left: 291px;
 
    &:active {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
@@ -215,6 +214,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
        &__input {
        width: 450px;
+       }
+       &__button {
+       margin-left: 291px;
        }
 }}
 
